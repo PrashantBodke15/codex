@@ -4,33 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Online Quiz System</title>
+    <title>QuizPro | Online Quiz System</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Online Quiz System</h1>
+    <header class="topbar">
+        <div class="brand">Quiz<span>Pro</span></div>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="nav-btn" onclick="startQuiz()">Join Now</button>
     </header>
 
-    <div class="container">
-        <h2>Welcome to Online Quiz System</h2>
+    <main class="hero">
+        <section class="hero-text">
+            <p class="eyebrow">Smart learning platform</p>
+            <h1>Challenge your brain with interactive online quizzes.</h1>
+            <p class="lead">
+                Learn faster, test your knowledge, and track your progress with a modern quiz system designed for students, teams, and lifelong learners.
+            </p>
 
-        <p>
-            Test your knowledge by taking an online quiz.
-        </p>
+            <div class="hero-actions">
+                <button class="primary-btn" onclick="startQuiz()">Start Quiz</button>
+                <button class="secondary-btn" type="button">View Courses</button>
+            </div>
 
-        <button onclick="startQuiz()">Start Quiz</button>
-    </div>
+            <ul class="stats" aria-label="Platform statistics">
+                <li>
+                    <strong>10k+</strong>
+                    <span>Active learners</span>
+                </li>
+                <li>
+                    <strong>120+</strong>
+                    <span>Quiz topics</span>
+                </li>
+                <li>
+                    <strong>4.9/5</strong>
+                    <span>User rating</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="hero-card" aria-label="Example quiz card">
+            <div class="quiz-card">
+                <div class="quiz-header">
+                    <span class="badge live">Live</span>
+                    <span class="timer">03:45</span>
+                </div>
+
+                <h2>General Knowledge</h2>
+
+                <div class="question-box">
+                    <p>Which planet is known as the Red Planet?</p>
+                    <div class="options">
+                        <span>Earth</span>
+                        <span class="correct">Mars</span>
+                        <span>Venus</span>
+                        <span>Jupiter</span>
+                    </div>
+                </div>
+
+                <div class="progress-wrap">
+                    <div class="progress-bar"></div>
+                </div>
+
+                <div class="score-row">
+                    <span>82% accuracy</span>
+                    <span>4 / 5</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="features" id="features">
+        <div class="section-heading">
+            <p class="eyebrow">Why choose us</p>
+            <h2>Everything you need to learn and compete.</h2>
+        </div>
+
+        <div class="feature-grid">
+            <article class="feature-item">
+                <div class="icon">⚡</div>
+                <h3>Fast Setup</h3>
+                <p>Launch practice sessions in seconds and keep students engaged with instant feedback.</p>
+            </article>
+
+            <article class="feature-item">
+                <div class="icon">📊</div>
+                <h3>Performance Tracking</h3>
+                <p>Monitor quiz results, improvement trends, and learner progress in one dashboard.</p>
+            </article>
+
+            <article class="feature-item">
+                <div class="icon">🏆</div>
+                <h3>Competitive Mode</h3>
+                <p>Motivate users with leaderboards, streaks, and timed challenge rounds.</p>
+            </article>
+
+            <article class="feature-item">
+                <div class="icon">🔒</div>
+                <h3>Secure Access</h3>
+                <p>Keep quiz sessions reliable and protected with a trusted user experience.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="cta" id="about">
+        <div class="cta-box">
+            <h2>Ready to challenge yourself?</h2>
+            <p>Join thousands of learners and test your knowledge with a free quiz experience today.</p>
+            <button class="primary-btn" onclick="startQuiz()">Launch Quiz</button>
+        </div>
+    </section>
 
     <script>
         function startQuiz() {
             alert("Quiz Started!");
         }
     </script>
-
 </body>
 </html>
 ```
